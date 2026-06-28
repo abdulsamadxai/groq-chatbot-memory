@@ -1,6 +1,6 @@
-# 🧠 Chatbot with Memory - Now it Remembers You
+# 🧠 Chatbot with Memory Now it Remembers You
 
-In the last guide we built a basic chatbot. It worked but had one big problem - it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
+In the last guide we built a basic chatbot. It worked but had one big problem it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
 
 The only real change? One list called `chat_history`.
 
