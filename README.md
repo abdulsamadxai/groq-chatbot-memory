@@ -1,6 +1,6 @@
-# 🧠 Chatbot with Memory - Now it Remembers You
+# 🧠 Chatbot with Memory Now it Remembers You
 
-In the last guide we built a basic chatbot. It worked but had one big problem - it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
+In the last guide we built a basic chatbot. It worked but had one big problem it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
 
 The only real change? One list called `chat_history`.
 
@@ -126,7 +126,7 @@ chat_history = []
 
 This is the only new setup line. It creates an empty list before the loop starts.
 
-This list will grow with every message - yours and the bot's. By the end of a conversation it looks like this:
+This list will grow with every message yours and the bot's. By the end of a conversation it looks like this:
 
 ```python
 [
@@ -194,7 +194,7 @@ New code sends the whole history:
 messages=chat_history
 ```
 
-This is how the AI remembers. We are not storing memory inside the AI - we are just sending it the full conversation every single time. The AI reads it all fresh and replies knowing everything that was said before.
+This is how the AI remembers. We are not storing memory inside the AI we are just sending it the full conversation every single time. The AI reads it all fresh and replies knowing everything that was said before.
 
 ```mermaid
 flowchart TD
@@ -267,7 +267,7 @@ flowchart TD
     classDef green fill:#1a3a2a,stroke:#34d399,color:#6ee7b7
 ```
 
-Every turn we send a little more. The list keeps growing. That is why a very long conversation costs more - more tokens are being sent each time.
+Every turn we send a little more. The list keeps growing. That is why a very long conversation costs more more tokens are being sent each time.
 
 ---
 
@@ -331,7 +331,7 @@ flowchart TD
     classDef red fill:#3a0f0f,stroke:#ef4444,color:#fca5a5
 ```
 
-This is called having no **tools**. The AI can only talk — it cannot take real actions in the world.
+This is called having no **tools**. The AI can only talk  it cannot take real actions in the world.
 
 The next guide will show how to give your chatbot real powers by connecting it to tools like a calculator, a clock, and a weather checker.
 
