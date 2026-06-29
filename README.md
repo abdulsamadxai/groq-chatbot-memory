@@ -1,6 +1,6 @@
-# 🧠 Chatbot with Memory Now it Remembers You
+# 🧠 Chatbot with Memory - Now it Remembers You
 
-In the last guide we built a basic chatbot. It worked but had one big problem it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
+In the last guide we built a basic chatbot. It worked but had one big problem - it forgot everything after every message. This guide fixes that. We add **memory** so the AI remembers the whole conversation.
 
 The only real change? One list called `chat_history`.
 
@@ -314,12 +314,35 @@ flowchart TD
 
 ---
 
+## What is missing from this chatbot?
+
+This chatbot can talk and remember. But it cannot do anything.
+
+```mermaid
+flowchart TD
+    A["❌ This chatbot - no tools"]:::label
+
+    A1["You: What is the weather in Islamabad?"]:::blue --> B1["Bot: I don't know\nI have no way to check 🤷"]:::red
+    A2["You: What is 1847 x 293?"]:::blue --> B2["Bot: I think it's... maybe...\ncould be wrong 🤔"]:::red
+    A3["You: Search the web for latest AI news"]:::blue --> B3["Bot: I cannot access\nthe internet ❌"]:::red
+
+    classDef label fill:#3a0f0f,stroke:#ef4444,color:#fca5a5,font-weight:bold
+    classDef blue fill:#1e3a5f,stroke:#4a8fd4,color:#a8d4ff
+    classDef red fill:#3a0f0f,stroke:#ef4444,color:#fca5a5
+```
+
+This is called having no **tools**. The AI can only talk — it cannot take real actions in the world.
+
+The next guide will show how to give your chatbot real powers by connecting it to tools like a calculator, a clock, and a weather checker.
+
+---
+
 ## What's Next?
 
 ```mermaid
 flowchart TD
     A["✅ You finished this guide\nyour chatbot now remembers!"]:::done
-    A --> B["🎭 Next - Add a System Prompt\ngive your chatbot a personality and a role"]:::blue
+    A --> B["🛠️ Next - Add Tools to your Chatbot\ngive your AI the power to take real actions\nweather · calculator · web search"]:::blue
 
     classDef done fill:#1a3a2a,stroke:#34d399,color:#6ee7b7
     classDef blue fill:#1e3a5f,stroke:#4a8fd4,color:#a8d4ff
